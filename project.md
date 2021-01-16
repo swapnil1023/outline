@@ -6,7 +6,7 @@ A hyperlocal e-commerce platform
 
 ## Project Description
 
-An advanced project of building a full-stack hyperlocal e-commerce platform which focuses on providing all the products from your nearby retail shops. This project will help you applly all your flutter and android dev skills in one place and make a powerful and good looking android application.
+An advanced project of making a full-stack hyperlocal e-commerce platform which focuses on providing all the products from your nearby retail shops. This project will help you apply all your flutter and android dev skills in one place and make a powerful and good looking android application.
 
 ## Author
 
@@ -38,7 +38,7 @@ Flutter, dart, js(Basics)
 
 ## **Skills to be learned**
 
-Advanced flutter, Firebase, Android application development, making an online paypemt gateway using paytm API, full stack development of a highly scalable application.
+Advanced flutter, Firebase, Android application development, making an online paymet gateway using paytm API, full stack development of a highly scalable application.
 
 
 
@@ -46,15 +46,14 @@ Advanced flutter, Firebase, Android application development, making an online pa
 
 ## **Project Id** 
 
-PROJECT_SLACK_REACT
+PROJECT_HYPERLOCAL_ECOMMERCE
 
 ## **Slug URL** 
 
-react-slack-clone
-
+react-hyperlocal-ecommerce
 ## **Keywords**
 
-flutter developement, dart, flutter, firebase, firestore, cloud functions, paytm payment gateway, push notifications, javascript, project
+flutter developement, dart, flutter, firebase, firestore, cloud functions, paytm payment gateway, push notifications, javascript, project, node.js
 
 ## **Category**
 
@@ -70,11 +69,11 @@ flutter, dart, Firebase, firebase cloud functions, firebase cloud messaging, and
 
 ## **Objective** 
 
-You will be building a hyperlocal e-commerce platform using flutter and dart, while keeping the data base on firestore and further using cloud functions to impliment few other functionalities of the application like an online payment gateway. 
+You will be making a hyperlocal e-commerce platform using flutter and dart, while keeping the data base on firestore and further using cloud functions to implement few other functionalities of the application like an online payment gateway. 
 
 
 ## Project Context 
-With each day the hold of bulk e-commerce industries like Amazon, Flipkart etc is increasing. This is bringing a hard time for the small local retailers and businesses. With the increasing ease of buying products online makes it hard for these local businesses to compete in the market.
+With each day, the hold of bulky e-commerce industries like Amazon, Flipkart etc is increasing. This is bringing a hard time for the small local retailers and businesses. The increasing ease of buying products online makes it harder for the local businesses to compete in the market.
 
 Hyperlocal businesses are the one where one wants to build a local ecosystem that enables customers to buy anything from their neighborhood stores.
 
@@ -93,16 +92,16 @@ We can divide the application architecture in the following :
 
 - Flutter - Application’s frontend and core-functionalities
 - Firebase - Integrating the database on firestore with the frontend.
-- Cloud functions - writing few functions to impliment few features like notification and payment gateway.
+- Cloud functions - writing few functions to implement few features like push notifications and payment gateway.
 - GitHub - To publish your work
 
 ![product_stages](images/BlockDiagram.png)
 
 ## High-Level Approach 
 
-- Setting up the UI part of the application, building all the different pages and the UX, this will slowly help you understand how the final widget tree is going to look like. We will be using few different flutter packages to add that extra premium touch to our UI.
+- Setting up the UI part of the application, making all the different pages and the UX, this will gradually help you understand how the final widget tree is going to look like. We will be using few different flutter packages to add that extra premium touch to our UI.
 - Intigrating the firestore database to populate data on the frontend.
-- Building authentication using firebase.
+- making authentication using firebase auth.
 - Slightly bending the widget tree to enable our application in quering location based documents. This will help us with the hyperlocal part of the application. 
 - Create extra features like push notifications and Paytm payment gateway.
 - Publish to GitHub.
@@ -111,7 +110,7 @@ The desired end result of this project is like [this](https://play.google.com/st
 
 ## Primary goals 
 
-- Build a e-commerce app from scratch using flutter and secure the app with proper authentication using Firebase as a database.
+- Build an e-commerce app from scratch using flutter and secure the app with proper authentication using Firestore as the database.
 
 # **Task_id = 1**
 
@@ -122,26 +121,26 @@ Initial setup
 
 ## Initial setup
 
-I recommend installing VSCode and the Flutter and Dart plugins to start developing apps.
+I recommend installing VSCode along with the Flutter and Dart plugins to start developing apps.
 
 ## Requirements
 - If you're using the flutter framework for the first time, I'd suggest you to go online and get a basic idea of what flutter is and how does it work. It'll help you connect better with the work that you're going to be doing.
-- We will setup the basic skeleton of the app first. If you are building a Flutter app for the first time, refer this [page](https://flutter.dev/docs/get-started/codelab). After successfully setting up your new flutter project, we will now make two directories:
+- We will setup the basic skeleton of the app first. If you are making a Flutter app for the first time, refer this [page](https://flutter.dev/docs/get-started/codelab). After successfully setting up your new flutter project, we will now make two directories:
     - UI - this will store the dart files of all the screens and pages.
-    - Functionalities - this will store all the other dart files like `firestore_service.dart` which will have all the CRUD functions for the firestore, `auth.dart` which will have all the firebase authentication related code and similarly other dart files who simply just run in the background at all time and is further needed by other dart files in the UI directory.
+    - Functionalities - this will store all the other dart files like `firestore_service.dart` which will have all the CRUD functions for the firestore, `auth.dart` which will have all the firebase authentication related code and similarly other dart files which simply just run in the background at all time and is further needed by other dart files in the UI directory.
 
     The file structure for the completed app would be similar to the image below.
 
     ![product_structure](images/project1.png)
 
-- We're also going to need few flutter packages available at [pub.dev](https://pub.dev/). For that we need to add few dependencies in `pubspec.yaml` file, which should then look like - 
+- We're also going to need few flutter packages available at [pub.dev](https://pub.dev/). For which we need to add few dependencies in `pubspec.yaml` file, which should then look like - 
 
     ![dependencies](images/dependencies.png)
 
-- After setting up the project, we'll set up the firestore project make the skeletan database structute:
+- After setting up the project, we'll set up the firestore project and make the skeleton database structure:
 
     1. If you're using firebase for the first time, I'd recommend you to check this [page](https://firebase.google.com/docs/firestore/quickstart) out.
-    2. Make a clean structure of how your database should look like. Decide what all collections should be incorporated and the further decide the structue and feilds of the documents in each collection. You should atlest these discrete collections - 
+    2. Make a clean structure of how your database should look like. Decide what all collections should be incorporated and the further decide the structure and fields of the documents in each collection. You should atleast have these discrete collections - 
           - users - store all the user documents.
           - products - store all the product documents.
           - shops - store all the shop data.
@@ -165,7 +164,7 @@ I recommend installing VSCode and the Flutter and Dart plugins to start developi
 ## Bring it On! 
 - Try to figure out the document structure of each collection.
 - Create all the custome CRUD fuctions that you think you'll be needing in the `firestore_service.dart` file.
-- Check the security rules of your firebase project.
+- Check the security rules of your firestore project.
 
 ## Expected outcome:
 -  You should have the project setup complete along with the firebase project connected to it.
@@ -174,12 +173,12 @@ I recommend installing VSCode and the Flutter and Dart plugins to start developi
 
 ## Task Title
 
-Building pages and UI and intigrating data from firestore
+Making pages, UI and integrating data from firestore.
 <br>
 
-## Building pages and UI and intigrating data from firestore
+## Making pages and UI and intigrating data from firestore
 
-An important thing to note while building the screens and using the variables that power your app, is state management.
+An important thing to note while making the screens and using the variables that power your app, is state management.
 
 ### State management
 There are different options you can take to manage state in your application. I'll list a few of them below:
@@ -211,7 +210,7 @@ It however gets a bit complex with increasing state variables and might lead to 
 ## Requirements
 - [Research](https://uxplanet.org/best-practices-in-mobile-app-design-in-2020-7f5026818ade) about good design practices. Learn how you can make your app more accessible and user friendly.
 - Evaluate your choice of widgets to use; fancier ones are appealing but keep utility in mind while making the choice. Check [here](https://github.com/Solido/awesome-flutter) for some cool widgets.
-- Start with building the Homescreen, which should look like the image below. Use the [material.io](https://material.io/) for many designing and development resources. That navigation bar can be made using the curved navigation bar package available at pub.dev. Location icon shows the current location of the device, check this [page](https://www.digitalocean.com/community/tutorials/flutter-geolocator-plugin) out for a detailed walk through. I recommend putting all the location service related code in a seperate dart file in the functionalities directory.The horizontal scrollable list under "Top stores nearby" shows all the stores nearby. We'll later discuss how to query stores based on the current location.
+- Start with making the Homescreen, which should look like the image below. Use the [Material.io](https://material.io/) for many designing and development resources. That navigation bar can be made using the curved navigation bar package available at pub.dev. Location icon shows the current location of the device, check this [page](https://www.digitalocean.com/community/tutorials/flutter-geolocator-plugin) out for a detailed walk through. I recommend placing all the location service related code in a seperate dart file in the functionalities directory.The horizontal scrollable list under "Top stores nearby" shows all the stores nearby. We'll later discuss how to query stores based on the current location.
 
   ![homescreen_image](images/homescreen.png)
 - Build the discover page. It's a very basic page with a tab-bar in it, the catagories which will show products of that particular catagory, and the Shops tab which will show the products of that particular shop. Showing products of a particular shop or catagory or both can be tackled with simlple firestore queries.
@@ -221,7 +220,7 @@ It however gets a bit complex with increasing state variables and might lead to 
 
   ![orders_page](images/orders.png)
 
-- Building wishlist page. I'd recommend to store the wishlist data of a particular user in a seperate field of the user doccument. Which can simply be a list of the product ids of all the products in the wish list. Now you just have to show those products with simple quering  in a way similar to the image below.
+- Making wishlist page. I'd recommend to store the wishlist data of a particular user in a seperate field of the user document. Which can simply be a list of the product ids of all the products in the wishlist. Now you just have to show those products with simple quering in a way similar to the image below.
 
   ![wishlist_page](images/wishlist.png)
 - Making the product listview page, which basically shows different query results of the products collection, like search query, shop  specific query, category specific query, discount specific query etc.
@@ -233,10 +232,10 @@ It however gets a bit complex with increasing state variables and might lead to 
 - To build the cart page, I'd recommend the same to have a seperate field in the user doccument (in users collection). This will have all the cart related information, like product ids of the products in the cart and  their quantities. The cart should look like the image below. The card layout can be achieved using the card widget and the stack widget (which gives that effect to the delete button on the top right).
 
    ![cart_page](images/cart.png)
-- On tapping the place order in the cart, you should be navigated to the reviwe cart page. This will give you a summary of your order, adderss details, payment details etc. Again basic querying from firestore should do most of the work. Add address or phone number will require you to update the user document.
+- On tapping the place order in the cart, you should be navigated to the review cart page. This will give you a summary of your order, address details, payment details etc. Again basic querying from firestore should do most of the work. Adding new address or edit phone number will require you to update the user document.
 
   ![cart_review_page](images/review.png)
-- To impliment features like "Place Order", basic CRUD functions can be used. Store the order data in orders collection. Make sure to include fields like payment detailed, address, userId etc.
+- To implement features like "Place Order", basic CRUD functions can be used. Store the order data in the orders collection. Make sure to include fields like payment detailed, address, userId etc.
 ### References
 
 - [flutter.dev](https://flutter.dev/)
@@ -249,16 +248,16 @@ It however gets a bit complex with increasing state variables and might lead to 
 ## Tip
 - Make good use of SliverList widget.
 - Instead of making an UI element from scratch, see if a similar package is available at pub.dev or not. This will cut down your time requirements and these packages are usually very light and easy to use.
-- Make use of different [providers](https://medium.com/flutter-community/making-sense-all-of-those-flutter-providers-e842e18f45dd#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1MmZjYjk3ZGY1YjZiNGY2ZDFhODg1ZjFlNjNkYzRhOWNkMjMwYzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2MTA1Njc5ODYsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwOTE4MTA5ODUyMjQzMTE0NTc1NyIsImVtYWlsIjoic3dhcG5pbHNpbmdoMTAyM0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXpwIjoiMjE2Mjk2MDM1ODM0LWsxazZxZTA2MHMydHAyYTJqYW00bGpkY21zMDBzdHRnLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IlN3YXBuaWwgU2luZ2giLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2c2ZThPX2I2dTRNVDhySHVLUFpLS1RuWjJfT1VjWE9CS2c2R21PTkJrPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlN3YXBuaWwiLCJmYW1pbHlfbmFtZSI6IlNpbmdoIiwiaWF0IjoxNjEwNTY4Mjg2LCJleHAiOjE2MTA1NzE4ODYsImp0aSI6IjFkNWYzMDVmYjM5ZmE5ZDI3NWFjM2JhZDlhNDY0NWY1MzQwZjk4NWUifQ.yqJxxxnpjpyoHpA8-6kEEML-Izpk0PwXIcamGmk0AccthREVZP-2EK9vwVjCtR5WXkGCLKQSUrlKwC3IpkOLsFb3JcN_tD16xacn5uxvtcUspBAlMMK5a8Rnd5U_RWEoParwPWoZT_cXMOF9KQUDyHDCyWzXoUbSDaUChqpwEDyYUHIFWCQssv0rHBnqCNPRZBsECPmIu6HOP1laTkuVLmfmVZSErX67XDnfJdU3EJGQpEpui9s44ByNlBampw-fcKjS32PlKgLjNbNwCJOcUb0oxyo5FwMszAOMzGGU6BcEZwQOq6ZIZK-pEq2KVH-VQjeEWixUqkasEEYEjWurmA) for making the user doccument available throught the widget tree.
+- Make use of different [providers](https://medium.com/flutter-community/making-sense-all-of-those-flutter-providers-e842e18f45dd) for making the user doccument available throught the widget tree.
 - Use proper indentation while writing the code, this will help you navigate better in your code.
 
 ## Bring it On! 
 - Try to make the UI as good looking as possible with the use of different tools and packages available.
 - Write the code for search bar(Hint: simple sub-string based query).
 - Try to implement the sort and filter feature.
-- Try to incorporarte a loading spinner wherever needed.
+- Try to incorporate a loading spinner wherever needed.
 - Write the code for the map button in the product description page, which will show the shop's location in google maps.
-- Write the code for the call bullon in the product description page, which will automatically dial the shops contact number.
+- Write the code for the call button in the product description page, which will automatically dial the shop's contact number.
 - Try different transitions animation like hero animations etc.
 - Make a image viewer for displaying the product image, you should also be able to zoom in or out or rotate the image.
 
@@ -280,12 +279,12 @@ When you open the application for the first time or after logging out you're tak
 ## Requirements
 
 - Create basic (UI) forms similar to the image shown above.
-- To add functionality to it, register users with email and Gmail and authenticate the user into the database with the heelp of packages like [firebase_auth](https://pub.dev/packages/firebase_auth) and [google_sign_in](https://pub.dev/packages/google_sign_in).
+- To add functionality to it, register users with email and Gmail and authenticate the user into the database with the help of packages like [firebase_auth](https://pub.dev/packages/firebase_auth) and [google_sign_in](https://pub.dev/packages/google_sign_in).
 - Again, keeping the authentication related code/files in functionalities folder will be a good practice.
-- If the user is registering for the first time, you need to make a skeleton doocument in the ussers collection for the user. Although there are many ways to do that, one of which is using firebase cloud functions. If you're new in using firebase cloud functions, start with this [page](https://firebase.google.com/docs/functions/get-started). After successfully writing and deploying your cloud function, you should see something similar to the images below.
+- If the user is registering for the first time, you need to make a skeleton document in the users collection for the user. Although there are many ways to do that, one of which is using firebase cloud functions. If you're new in using firebase cloud functions, start with this [page](https://firebase.google.com/docs/functions/get-started). After successfully writing and deploying your cloud function, you should see something similar to the snippet shown below.
 
   ![onCreate](images/oncreate.png)
-- After registration, make the login page functional, i.e. it should redirect the user to the app page (blank as of now). In case of error in any of the credentials, the appropriate error must be displayed. 
+- After registration/login page, user should be redirected to the homepage. In case of error in any of the credentials, the appropriate error must be displayed. 
 - The following figure is what your user's document in firestore should look like (with respect to the parameters assigned to each user like name, address, wishlist, cart etc).
 
   ![user_document](images/userDoc.png)
@@ -298,17 +297,17 @@ When you open the application for the first time or after logging out you're tak
 - [Writing and deploying firebase cloud functions.](https://firebase.google.com/docs/functions/get-started)
 
 ### Note
-- You must not store user passwords in the user document. That will be handled by the firebase authentication.
+- You must not store the user password in the user document. That will be handled by the firebase authentication.
 
 ## Bring it On! 
 
 - Implement forgot password functionality too - refer [this](https://medium.com/@levimatheri/flutter-email-verification-and-password-reset-db2eed893d1d) for help.
-- Try to implement "Stay logged in" feature by saving user credentials locally. You can use [shared prferences](https://pub.dev/packages/shared_preferences) for this.
+- Try to implement "Stay logged in" feature by saving user credentials locally. You can use [shared preferences](https://pub.dev/packages/shared_preferences) for this.
 - Implement logout feature as well. You should delete all the user data stored locally, when the user logs out.
 
 ## Expected Outcome
 
-At this point the login/register pages must be made along with its error handling. Also the user must be redirected to the home screen page upon successful login. Check for all sorts of errors (email, password, password confirmation error) in the forms and give appropriate errors for each.
+At this point, the login/register pages must be made along with its error handling. Also the user must be redirected to the home screen page upon successful login. Check for all sorts of errors (email, password, password confirmation error) in the forms and give appropriate errors for each.
 
 Your cloud function should be able to make the skeleton document of the user upon registration.
 
@@ -318,12 +317,12 @@ Try making different permutations of errors possible to test your app’s functi
 
 ## Task Title
 
-Modification for a hyper-local model application.6
+Modification for a hyper-local model application.
 <br>
 
 ## Preparation 
 
-By now, you should be comfortable with handeling location services. I'd recommend you to store this location data in a widget called [streaming_shared_preferences](https://pub.dev/packages/streaming_shared_preferences), which is similar to shared preferences but with subscription to the data. I'd also recommend you to use some provider widgets to make this variable available down the widget tree, this will come in handy while accesing location data in different pages.
+By now, you should be comfortable with handling location services. I'd recommend you to store this location data in a widget called [streaming_shared_preferences](https://pub.dev/packages/streaming_shared_preferences), which is similar to shared preferences but with subscription to the data. I'd also recommend you to use some provider widgets to make this variable available down the widget tree, this will come in handy while accesing location data in different pages.
 
 Make sure your documents in the shop collection has a field for storing the location data of the shop. The data structure that we'll be using here is a map, with two keys:
   - geohash : a unique hash code for the area.
@@ -332,12 +331,12 @@ Make sure your documents in the shop collection has a field for storing the loca
     ![location field](images/location.png)
 
 ## Requirements
-- Although what we want can be achieved through many different ways, but what we'll be doing is quite simple and much reliable. For quering stores based on the location, we'll be using the package called [GeoFlutterFire](https://pub.dev/packages/geoflutterfire). It allows you to store and query a set of keys based on their geographic location. GeoflutterFire is an easy to use tool which will make querying easy while keeping the application light and breazy.
+- Although what we want can be achieved through many different ways, but what we'll be doing is quite simple and much reliable. For quering stores based on the location, we'll be using a package called [GeoFlutterFire](https://pub.dev/packages/geoflutterfire). It allows you to store and query a set of keys based on their geographic location. GeoflutterFire is an easy to use tool which will make querying easy while keeping the application light and breezy.
 - Querying through GeoFlutterFire gives you a list of document snapshots in result. So, we'll be writing a simple function like what's shown below, to get a list of document snapshots of all the shops that are nearby.
 
   ![nearby_stores_function](images/nearbyShopFunction.png)
 - Now with the help of providers, we'll make this list available throught the widget tree.
-- Now slightly modify the firebase quering functions, by adding an extra condition. A condition (whereIn) to check whether the shop data in the product's document matches with any entry of the nearby shops list. For example:
+- Now slightly modify the firebase quering functions, by adding an extra condition. A condition (`whereIn`) to check whether the shop data in the product's document matches with any entry of the nearby shops list. For example:
 
   ![products_function](images/productsFunction.png)
 
@@ -350,11 +349,11 @@ Make sure your documents in the shop collection has a field for storing the loca
 - [Firestore Querying](https://firebase.google.com/docs/firestore/query-data/queries)
 
 ### Note
- - The stream of geoflutterfire query is slightly different for a regular query. I returns a list of document snapshots instead of a QuerySnapshot. 
+ - The stream of geoflutterfire query is slightly different from a regular query. It returns a list of document snapshots instead of a QuerySnapshot. 
 
 ## Bring it On! 
-- Fully explrore the GeoFlutterFire package and experiment with different radius for queries.
-- Impliment small features like locking place order button if some of the products in the cart are not available nearby.
+- Fully explore the GeoFlutterFire package and experiment with different radius for queries.
+- Implement small features like locking the place order button if some of the products in the cart are not available nearby.
           
   ![not cart](images/notCart.png)
 - We're just using the current user location for quering, see if you can change the centre of the query by passing a different geo data.
@@ -379,13 +378,13 @@ By now you should have a basic application ready without the payment system. Alt
 
 Since Paytm provides it's own web based UI for the payment portal, we don't have to focus much on the UI part. Instead we'll just use a web view to simply aid the payment portal.
 
-We'll be implimenting firebase cloud functions and then intigrating the payment web API into those firebase functions. Further we'll be using those functions in our flutter application using web view.
+We'll be implementing firebase cloud functions and then integrating the payment web API into those firebase functions. Further we'll be using those functions in our flutter application using web view.
 
 ## Requirements
 
 - Read the documentation for Paytm SDK integration in Flutter app available [here](https://developer.paytm.com/docs/all-in-one-sdk/hybrid-apps/flutter/).
-- Download the Paytm web sammple kit for Node.js form [here](https://github.com/Paytm-Payments/Paytm_Web_Sample_Kit_NodeJs).
-- We now need to set up our own server using fibase cloud functions and then intigrate the payment web API.
+- Download the Paytm web sample kit for Node.js form [here](https://github.com/Paytm-Payments/Paytm_Web_Sample_Kit_NodeJs).
+- We now need to set up our own firebase cloud functions and then integrate the payment web API.
 - Create a new firebase funtion and install express and body-parser dependencies.
 - Copy the `checksum` and `crypt` from the web sammple kit to the functions directory(where the index file is located).
 - Now writing the index code is quite complicated. We'll be making a post request for payment and then extract the parameters recieved from the request. We'll then pass these parameters to create a checksum and then making a request to move forward with the payment.
@@ -398,7 +397,7 @@ We'll be implimenting firebase cloud functions and then intigrating the payment 
 - For a further detailed walk through, I'd recommend you the check the video tutorial provided in the References below.
 ### References
 
-- [Paytm SDK  intigration](https://developer.paytm.com/docs/all-in-one-sdk/hybrid-apps/flutter/)
+- [Paytm SDK  integration](https://developer.paytm.com/docs/all-in-one-sdk/hybrid-apps/flutter/)
 - [webview_flutter](https://pub.dev/packages/webview_flutter)
 - [Video Tutorial](https://www.youtube.com/watch?v=iVuSMZ5uMAE&ab_channel=RetroPortalStudio)
 - [Web sample kit](https://github.com/Paytm-Payments/Paytm_Web_Sample_Kit_NodeJs)
@@ -445,9 +444,9 @@ We'll be using Firebase cloud messaging to implement easy push notifications. Fi
 
 - Add the package dependency to your project’s “pubspec.yaml”. Find the Firebase Cloud Messaging for Flutter package [here](https://pub.dev/packages/firebase_messaging).
 - On the Android side the Google Services Gradle Plugin needs to be included in the Gradle configuration.
-- The package has a function to generate a unique FCM identifier aka "token" for each device. Which will help thecloud function to send notification to a specific device.
+- The package has a function to generate a unique FCM identifier a.k.a. "token" for each device. Which will help the cloud function to send notification to a specific device.
 - When a user logs in, we must generate the token for the device and then store it in one of the field of user document.
-- Now write cloud functions for sending push notifications at different events, like when a new order is placed, cancled etc. Check the documentation for more details on how to write the functions.
+- Now write cloud functions for sending push notifications at different events, like when a new order is placed, canceled etc. Check the documentation for more details on how to write the functions.
 - One such example is shown below:
 
   ![fcm](images/fcm.png)
@@ -462,7 +461,7 @@ We'll be using Firebase cloud messaging to implement easy push notifications. Fi
 
 ### Note
 - Device tokens should be handled properly. Token generation should only take place upon sign-in or registration, not everytime the user opens the app.
-- Device tokens should also be removed from firestore when the user sign-out from a particular device. Else that device will keep on recieving sensitive notifications.
+- Device tokens should also be removed from firestore when the user logs-out from a particular device. Else that device will keep on recieving sensitive notifications.
 
 ## Bring it On! 
 
@@ -472,7 +471,7 @@ We'll be using Firebase cloud messaging to implement easy push notifications. Fi
 
 ## Expected Outcome
 
-Your application should now be equiped with a strong push-notification system. Users will now recieve customized notifications at various different events.
+Your application should now be equipped with a strong push-notification system. Users will now recieve customized notifications at various different events.
 
 # **Task_id = 7**
 
@@ -492,7 +491,7 @@ Till now, you have set up your app’s basic form. Now it’s time to amp up the
 
 Here are some recommendations you can adopt to make your app even better:
 
-- A map to show the exact location of all the stores nearby. Which further has the option to set the location of the user. Check [this](https://www.youtube.com/watch?v=hBL-zpC4rQA&ab_channel=RajaYogan) tutorial out for adding google maps and markers to your flutter application.
+- A map to show the exact location of all the stores nearby. Which further has an option to set the location of the user. Check [this](https://www.youtube.com/watch?v=hBL-zpC4rQA&ab_channel=RajaYogan) tutorial out for adding google maps and markers to your flutter application.
     ![map](images/map.png)
 - A profile page. Here, the user can edit all the personal informations like phone number, address.
     ![profile](images/profile.png)
